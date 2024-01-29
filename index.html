@@ -1,0 +1,25 @@
+<html>
+	<head>
+	<title> Color Me App 1 by Kamal Sir </title>
+	<style>
+		* { font-size:40px; }
+	</style>
+	<script>
+		function change()
+		{
+		event.preventDefault();
+		let colors = ["red", "pink", "gray", "brown", "blue", "black", "orange", "purple"];
+		let r = parseInt(Math.random() * colors.length);
+		document.body.style.backgroundColor = colors[r];
+		}
+	</script>
+	</head>
+	<body>
+	<center>
+		<h1> Color App 1 </h1>
+		<form onsubmit="change()">
+		<input type="submit" value="Color Me"/>
+		</form>
+	</center>
+	</body>
+</html>
